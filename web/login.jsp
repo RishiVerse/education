@@ -12,9 +12,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <style>
+          
+             body{
+            
+            margin:0;
+        }
+            </style>
     </head>
-    <body>
-        
+    <div>
+        <iframe src="logo.html" width="1427" height="651" frameborder="0"></iframe>
+    </div>
+        </<div>
         <form action="loginProcess.jsp" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
@@ -24,6 +33,7 @@
         
         <input type="submit" value="Login">
     </form>
+        </div>
        
     </body>
 </html>
