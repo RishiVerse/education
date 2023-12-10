@@ -48,10 +48,7 @@
             flex: 1; /* Allows the text to take available space */
         }
         
-        body{
-            
-            margin:0;
-        }
+     
         
         .navContainer a{
            
@@ -76,6 +73,10 @@ footer{
                 display:flex;
                 font-size:20px;
         }
+           body{
+           
+            margin:0;
+        }
         
     </style>
 </head>
@@ -90,6 +91,8 @@ footer{
             <a href="register"><button class="signup-btn">Sign Up</button></a>
         </div>
     </div>
+
+ 
 <div class="navContainer">
   <a href="#Home">Home</a>
   <a href="#Topics">Topics</a>
@@ -97,6 +100,18 @@ footer{
   <a href="#News">News</a>
    <a href="#About">About</a>
    
-</div>  
-</body>
+</div>
+        <div>
+        <form action="login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <input type="submit" value="Login">
+    </form>
+        </div>
+       
+    </body>
 </html>
