@@ -31,15 +31,16 @@ public class DatabaseMethods {
             Connection conn = connect(); // Establish the database connection
             
             // Creating and executing the SQL statement
-            PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM user WHERE name = ?");
+            PreparedStatement preparedStatement = conn.prepareStatement("SELECT * FROM user");
            
             r = preparedStatement.executeQuery(); // Execute the query
 
             // Processing the result set
             while (r.next()) {
-                String name = r.getString("username");
+                String name = r.getString("uniqueUser");
                 // String password = r.getString("password");
-                // System.out.println(name + "  " + password);
+                 System.out.println(name + "  ");
+                 
                 
                 if (name != null && name.equals(u)) {
                     flag = true;
